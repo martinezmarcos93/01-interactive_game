@@ -32,11 +32,11 @@ def elegir_aventura():
     elegir_clan=input("A que Clan perteneces?: a)Brujah, b) Gangrel, c)Tremere   :         ")
     time.sleep(2)
     if elegir_clan == "a":
-     print("Bienvenido al clan Brujah")
+     print(Brujah)
     elif elegir_clan == "b":
-     print("Bienvenido al clan Gangrel")
+     print(Gangrel)
     elif elegir_clan == "c":
-     print("Bienvenido al clan Tremere")
+     print(Tremere)
     elegir_enemigo=input("Quienes son tus enemigos?: a)Los Ventrue,  b)Los Giovanni, c) El Sabath   :    ")
     time.sleep(2)
     if elegir_enemigo == "a":
