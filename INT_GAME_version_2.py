@@ -1,4 +1,4 @@
-import time
+import time, random
 
 
 # clanes
@@ -49,9 +49,16 @@ def elegir_aventura():
     elif elegir_plan == "c":
      print(plan_3)
      
+# def desenlace():
+#     desenlacePlan = random.randint("a", "b", "c")
+#     if elegir_plan == str(desenlacePlan):
+#        print("TU PLAN HA FRACASADO")
+#     else:
+#          print("TU PLAN HA TRIUNFADO")
+     
 introduccion()
 elegir_aventura()
-    
+# desenlace()
 
 # print('¿Quieres jugar de nuevo? (sí o no)')
 # jugarDeNuevo = input()
@@ -73,12 +80,14 @@ if jugarDeNuevo == 'sí' or jugarDeNuevo == 's':
     introduccion()
 
     elegir_aventura()
+    
+    # desenlace()
 
     print('¿Quieres jugar de nuevo? (sí o no):  ')
     jugarDeNuevo = input()
 else : 
-    print('chupala gato')
+    print('Hasta la proxima')
     
     
- #modificacion sin proposito   2
+
     
