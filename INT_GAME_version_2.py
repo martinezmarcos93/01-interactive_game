@@ -1,6 +1,6 @@
 import time, random
 
-
+#Definiendo Variables:
 # clanes
 Brujah="Bienvenido al clan Brujah"
 Gangrel="Bienvenido al clan Gangrel"
@@ -13,6 +13,11 @@ ant_S="El Sabath va a atacar la ciudad, debemos alertar a la Camarilla y prepara
 plan_1="Con todo el armamento posible, nos dedicamos a expulsar a esa escoria de nuestro dominio, a costa de la vida de algunos neo natos"
 plan_2="Astutamente hemos doblegado todos sus intentos de intromision en nuestro dominio y ahora estan subyugados por nuestra jugada"
 plan_3="Esos cobardes nisiquiera se presentaron a la batalla, los buscaremos donde quiera que se escondan"
+#Finales
+win = "TU PLAN HA TRIUNFADO"
+loose = "TU PLAN HA FALLADO"
+desenlace= (win,loose)
+
 
 def introduccion():
     time.sleep(2)
@@ -49,30 +54,15 @@ def elegir_aventura():
     elif elegir_plan == "c":
      print(plan_3)
      
-# def desenlace():
-#     desenlacePlan = random.randint("a", "b", "c")
-#     if elegir_plan == str(desenlacePlan):
-#        print("TU PLAN HA FRACASADO")
-#     else:
-#          print("TU PLAN HA TRIUNFADO")
+     
+def desenlacePlan():
+    print(random.choice(desenlace))
+     
      
 introduccion()
 elegir_aventura()
-# desenlace()
+desenlacePlan()
 
-# print('¿Quieres jugar de nuevo? (sí o no)')
-# jugarDeNuevo = input()
-# while jugarDeNuevo == 'sí' or jugarDeNuevo == 's':
-#     introduccion()
-#     aventura= elegir_aventura()
-
-# class jugarDeNuevo():
-#   volver_a_empezar=input('¿Quieres jugar de nuevo? (sí o no):  ')
-#   while volver_a_empezar == "si" or volver_a_empezar == "s":
-#    introduccion()
-#    elegir_aventura()
-#   volver_a_empezar= ''
-   
 
 jugarDeNuevo = input()
 if jugarDeNuevo == 'sí' or jugarDeNuevo == 's':
@@ -81,7 +71,7 @@ if jugarDeNuevo == 'sí' or jugarDeNuevo == 's':
 
     elegir_aventura()
     
-    # desenlace()
+    desenlacePlan()
 
     print('¿Quieres jugar de nuevo? (sí o no):  ')
     jugarDeNuevo = input()
