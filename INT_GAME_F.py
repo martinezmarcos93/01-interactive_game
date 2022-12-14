@@ -37,7 +37,7 @@ def elegirNombre():
   
    
 def elegir_aventura():
-    elegir_clan=input("A que Clan perteneces?: a)Brujah, b) Gangrel, c)Tremere   :         ")
+    elegir_clan=input("A que Clan perteneces,?: a)Brujah, b) Gangrel, c)Tremere   :         ")
     time.sleep(2)
     if elegir_clan == "a":
         time.sleep(2)
@@ -100,12 +100,4 @@ def repetirJuego():
         print('Hasta la proxima')
         pass
     
-    
-    
-introduccion()
-elegirNombre()
-elegir_aventura()
-desenlacePlan()
-repetirJuego()
-
     

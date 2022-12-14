@@ -1,4 +1,4 @@
-from INT_GAME_VYF import *    
+from INT_GAME_F import *    
     
     
 introduccion()
